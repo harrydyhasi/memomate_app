@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "452996565805",
+    "firebase_url": "https://memomate-dc314-default-rtdb.firebaseio.com",
+    "project_id": "memomate-dc314",
+    "storage_bucket": "memomate-dc314.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:452996565805:android:3d6abcc6601772f47be1a4",
+        "android_client_info": {
+          "package_name": "com.example.memomate"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCiK0Ut2dNvVJjoe5Is_2pBkAlwXcrNQBI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

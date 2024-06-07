@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.SplashActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        >
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/memomate" />
+
+        <TextView
+            android:id="@+id/textView"
+            style="@style/logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MemoMate"
+            android:textSize="28dp"
+            android:layout_marginTop="8dp"
+            />
+
+        <com.github.ybq.android.spinkit.SpinKitView
+            android:layout_width="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_height="40dp"
+            android:id="@+id/progressBar"
+            app:SpinKit_Color="@color/blue"/>
+    </LinearLayout>
+
+</RelativeLayout>

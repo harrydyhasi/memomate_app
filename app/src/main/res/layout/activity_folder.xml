@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activities.FolderActivity"
+    android:background="#FFFFFF">
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="60dp"
+            >
+
+            <TextView
+                android:id="@+id/txtTitleFolder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginBottom="10dp"
+                android:text="English"
+                android:textSize="24dp"
+                android:layout_marginLeft="15dp"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginLeft="15dp">
+
+                <TextView
+                    android:id="@+id/txtQuantity"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="0 sets"
+                    android:textColor="@color/gray"
+                    android:textSize="14dp"
+                    android:textStyle="bold" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/avatar"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginRight="5dp"
+                    android:gravity="center"
+                    android:src="@drawable/han" />
+
+                <TextView
+                    android:id="@+id/txtUserName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:text="ngochandethuong"
+                    android:textSize="14dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="170dp"
+                android:layout_marginLeft="17dp"
+                android:layout_marginRight="17dp"
+                android:layout_marginTop="50dp"
+                app:cardElevation="5dp"
+                android:id="@+id/cardAddSet">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:paddingTop="25dp">
+
+                    <TextView
+                        android:id="@+id/textView34"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="This folder has no sets"
+                        android:textSize="20dp"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="5dp"
+                        android:textStyle="bold"
+                        />
+
+                    <TextView
+                        android:id="@+id/textView33"
+                        android:layout_width="330dp"
+                        android:layout_height="wrap_content"
+                        android:text="Organize your study sets by adding them to this folder"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:textSize="16dp"
+                        android:layout_marginBottom="5dp"
+                        />
+
+
+                    <com.google.android.material.button.MaterialButton
+                        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                        android:textColor="#FFFFFF"
+                        app:cornerRadius="5dp"
+                        android:backgroundTint="@color/blue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="45dp"
+                        android:text="Add a set"
+                        android:layout_gravity="center"
+                        android:textAllCaps="false"
+                        />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_marginTop="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/rcvFolder"/>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_gravity="top"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/btnReturn"
+            android:layout_width="18dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:src="@drawable/arrow_back" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="7" />
+
+        <ImageButton
+            android:id="@+id/btnAdd"
+            android:layout_width="18dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:src="@drawable/add2" />
+
+        <ImageButton
+            android:id="@+id/btnMenu"
+            android:layout_width="18dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_more" />
+    </LinearLayout>
+</FrameLayout>

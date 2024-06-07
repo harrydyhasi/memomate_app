@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activities.ClassDetailActivity"
+    android:background="#FFFFFF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_gravity="top"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/btnReturn"
+            android:layout_width="18dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:src="@drawable/arrow_back" />
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="7" />
+
+        <ImageButton
+            android:id="@+id/btnShare"
+            android:layout_width="18dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_share" />
+
+        <ImageButton
+            android:id="@+id/btnMenu"
+            android:layout_width="18dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_more" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txtName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:text="English"
+            android:textSize="24dp"
+            />
+        <TextView
+            android:id="@+id/txtQuantity"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:text="0 sets"
+            android:textColor="@color/grey"
+            android:textSize="14dp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+    <TabHost
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tabHost">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:id="@+id/class_sets"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:textAllCaps="false">
+                    <include layout="@layout/layout_class_study_sets" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/class_members"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    >
+
+                    <include layout="@layout/layout_class_members" />
+                </LinearLayout>
+
+            </FrameLayout>
+        </LinearLayout>
+    </TabHost>
+
+</LinearLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragments.InitMatchModeFragment">
+
+   <LinearLayout
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:orientation="vertical"
+       android:layout_gravity="center"
+       android:padding="12dp">
+
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Ready to play?"
+           android:textColor="@color/black"
+           android:fontFamily="@font/montserratbold"
+           android:textSize="32dp"
+           android:layout_gravity="center_horizontal"/>
+
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Match all of the terms with their definitions"
+           android:textSize="24dp"
+           android:gravity="center"
+           android:layout_marginTop="12dp"/>
+
+       <com.google.android.material.button.MaterialButton
+           android:id="@+id/btnStartGame"
+           android:layout_width="match_parent"
+           android:layout_height="60dp"
+           app:cornerRadius="3dp"
+           android:text="Start game"
+           android:textStyle="bold"
+           android:fontFamily="@font/montserratbold"
+           android:layout_marginTop="24dp"
+           android:backgroundTint="@color/blue"/>
+   </LinearLayout>
+</FrameLayout>

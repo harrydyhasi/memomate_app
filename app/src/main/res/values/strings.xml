@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">MemoMate</string>
+    <string name="desc_slider1">Over 90% of students who use MemoMate report higher grades</string>
+    <string name="desc_slider2">Search millions of flashcard sets</string>
+    <string name="desc_slider3">Learn in four different ways</string>
+    <string name="desc_slider4">Customize flashcards to your exact needs</string>
+    <string name="content_notification">Welcome to <b>MemoMate</b>! To begin, <b>search for a class or subject</b> to study.</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="web_client_id">216430495337-rlb4s1e4tf7vorl7vmucqr9co6n92avq.apps.googleusercontent.com</string>
+</resources>

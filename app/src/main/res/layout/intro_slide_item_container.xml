@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        >
+        <ImageView
+            android:id="@+id/imgBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/b1"
+            android:scaleType="fitXY"
+            />
+        <ImageView
+            android:padding="30dp"
+            android:id="@+id/imgSlider"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/s1"
+            android:background="@android:color/transparent"
+            />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/txtDesc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Over 90% of students who use Memomate report higher grades"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:fontFamily="@font/montserratbold"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:padding="20dp"/>
+
+</LinearLayout>

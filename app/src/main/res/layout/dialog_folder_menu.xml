@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/style_menu"
+    >
+
+
+    <TextView
+        android:id="@+id/btnEdit"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:drawableLeft="@drawable/edit"
+        android:drawablePadding="20dp"
+        android:gravity="center|left"
+        android:paddingLeft="20dp"
+        android:text="Edit Folder"
+        android:textColor="@color/gray"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:layout_marginTop="0dp"
+        />
+
+    <TextView
+        android:id="@+id/btnAdd"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@drawable/style_card"
+        android:drawableLeft="@drawable/add2"
+        android:drawablePadding="20dp"
+        android:gravity="center|left"
+        android:paddingLeft="20dp"
+        android:text="Add sets"
+        android:textColor="@color/gray"
+        android:textSize="16dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/btnDelete"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:drawableLeft="@drawable/delete"
+        android:drawablePadding="20dp"
+        android:gravity="center|left"
+        android:paddingLeft="20dp"
+        android:text="Delete"
+        android:textColor="@color/gray"
+        android:textSize="16dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/btnCancel"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:background="@drawable/style_card"
+        android:gravity="center"
+        android:text="Cancel"
+        android:textColor="@color/gray"
+        android:textSize="14dp"
+        android:textStyle="bold" />
+</LinearLayout>

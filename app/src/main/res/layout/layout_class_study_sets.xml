@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            android:layout_marginLeft="17dp"
+            android:layout_marginRight="17dp"
+            android:layout_marginTop="50dp"
+            app:cardElevation="5dp"
+            android:id="@+id/layoutAddSet">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingTop="25dp"
+                >
+
+                <TextView
+                    android:id="@+id/textView34"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="This class has no sets"
+                    android:textSize="20dp"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="5dp"
+                    android:textStyle="bold"
+                    />
+
+                <TextView
+                    android:id="@+id/textView33"
+                    android:layout_width="330dp"
+                    android:layout_height="wrap_content"
+                    android:text="Add an existing set or create a new one to share"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textSize="16dp"
+                    android:layout_marginBottom="5dp"
+                    />
+
+
+                <com.google.android.material.button.MaterialButton
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                    android:textColor="#FFFFFF"
+                    app:cornerRadius="5dp"
+                    android:backgroundTint="@color/blue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:text="Add a set"
+                    android:layout_gravity="center"
+                    android:textAllCaps="false"
+                    />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/rcvClassFolder"
+            android:layout_marginTop="15dp"/>
+    </LinearLayout>
+</RelativeLayout>

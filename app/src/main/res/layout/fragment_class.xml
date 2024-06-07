@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/line1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.memomate.Activities.DashboardActivity"
+    android:orientation="vertical"
+    android:background="#F6F7FB">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingTop="40dp"
+        android:background="#F6F7FB">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="20dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Classes"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:textColor="#2B124C"
+                android:layout_weight="9"
+                android:textAlignment="center"/>
+            <ImageButton
+                android:id="@+id/btnCreate"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@null"
+                android:scaleType="centerCrop"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_add" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="#F6F7FB">
+            <ScrollView
+                android:id="@+id/scrollView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="60dp"
+                android:background="#F6F7FB"
+                android:layout_marginTop="20dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_above="@+id/fixedlayout"
+                    android:orientation="vertical"
+                    android:id="@+id/fluidlayout"
+                    android:background="@null"
+                    android:paddingVertical="10dp">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/recyclerview_class"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                </LinearLayout>
+            </ScrollView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

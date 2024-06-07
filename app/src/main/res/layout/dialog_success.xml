@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:layout_marginRight="20dp"
+    android:layout_marginLeft="20dp"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_marginTop="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/style_dialog">
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Success!"
+            android:textStyle="bold"
+            android:textSize="18dp"
+
+            />
+        <TextView
+            android:id="@+id/txtNotification"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Your account has been created successfully"
+
+
+            />
+
+        <Button
+            android:layout_marginTop="10dp"
+            android:id="@+id/btnOk"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:backgroundTint="#50c878"
+            android:text="OK"
+            />
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/success"
+        android:layout_gravity="center|top"/>
+</FrameLayout>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/style_menu"
+    >
+
+    <TextView
+        android:id="@+id/btnEdit"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:drawableLeft="@drawable/ic_edit"
+        android:drawablePadding="20dp"
+        android:gravity="center|left"
+        android:paddingLeft="20dp"
+        android:text="Edit"
+        android:textColor="@color/gray"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:id="@+id/btnAddToFolder"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@drawable/style_card"
+        android:drawableLeft="@drawable/ic_folder"
+        android:drawablePadding="20dp"
+        android:gravity="center|left"
+        android:paddingLeft="20dp"
+        android:text="Add to folder"
+        android:textColor="@color/gray"
+        android:textSize="16dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/btnShare"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:drawableLeft="@drawable/ic_share"
+        android:drawablePadding="20dp"
+        android:gravity="center|left"
+        android:paddingLeft="20dp"
+        android:text="Share"
+        android:textColor="@color/gray"
+        android:textSize="16dp"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/btnDelete"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@drawable/style_card"
+        android:drawableLeft="@drawable/ic_delete"
+        android:drawablePadding="20dp"
+        android:gravity="center|left"
+        android:paddingLeft="20dp"
+        android:text="Delete set"
+        android:textColor="@color/gray"
+        android:textSize="16dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/btnCancel"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:gravity="center"
+        android:text="Cancel"
+        android:textColor="@color/gray"
+        android:textSize="14dp"
+        android:textStyle="bold" />
+</LinearLayout>

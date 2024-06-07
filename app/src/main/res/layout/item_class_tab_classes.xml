@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#F6F7FB">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+            <LinearLayout
+                android:id="@+id/drag_item"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/cardClass"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#FFFFFF"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginVertical="5dp"
+                    app:cardElevation="2dp"
+                    app:cardCornerRadius="15dp"
+                    app:strokeWidth="0dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="15dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:src="@drawable/ic_class"
+                                android:layout_gravity="center"/>
+                            <TextView
+                                android:id="@+id/txtName"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:text="Exercise 1"
+                                android:textStyle="bold"
+                                android:textColor="@color/black"
+                                android:layout_gravity="center"
+                                />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="10dp">
+                            <TextView
+                                android:id="@+id/txtQuantity"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="10 sets"
+                                android:textStyle="bold"
+                                android:textColor="#686868"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+            </LinearLayout>
+    </RelativeLayout>
+
+
+</RelativeLayout>

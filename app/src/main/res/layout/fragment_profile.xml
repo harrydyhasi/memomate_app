@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imgAvatar"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="70dp"
+        android:src="@drawable/user" />
+
+
+    <TextView
+        android:id="@+id/txtUserName1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ngọc Hân Dễ Thương"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:paddingTop="10dp"
+        android:layout_marginBottom="25dp"
+        />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        app:cardBackgroundColor="#FFFFFF"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="5dp"
+        app:contentPadding="5dp"
+        android:id="@+id/cardUserName"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginLeft="15dp">
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Username"
+                android:textStyle="bold"
+                android:paddingTop="5dp"
+                android:drawableLeft="@drawable/person"
+                android:drawablePadding="5dp"
+                />
+            <TextView
+                android:layout_marginTop="10dp"
+                android:id="@+id/txtUserName2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="5dp"
+                android:ems="10"
+                android:inputType="text"
+                android:text="Tên người dùng"
+                android:background="@drawable/style_edittext"
+                />
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        app:cardBackgroundColor="#FFFFFF"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="5dp"
+        app:contentPadding="5dp"
+        android:layout_marginTop="15dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Email"
+                android:textStyle="bold"
+                android:paddingTop="5dp"
+                android:drawableLeft="@drawable/mail"
+                android:drawablePadding="5dp"/>
+
+            <EditText
+                android:id="@+id/edtEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/style_edittext"
+                android:ems="10"
+                android:inputType="text|textEmailAddress"
+                android:text="handethuong@gmail.com"
+                android:textSize="14dp"
+                android:enabled="false"
+                />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        app:cardBackgroundColor="#FFFFFF"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="5dp"
+        android:layout_marginTop="15dp"
+        >
+        <Button
+            android:id="@+id/btnChangePassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"
+            android:backgroundTint="#FFFFFF"
+            android:gravity="left"
+            android:layout_gravity="center"
+            android:text="Change Password"
+            android:textColor="#000000"
+            android:drawableEnd="@drawable/next"/>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        app:cardBackgroundColor="#FFFFFF"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="5dp"
+        app:contentPadding="5dp"
+        android:layout_marginTop="15dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:text="Choose Language"
+                android:layout_marginLeft="20dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:drawableLeft="@drawable/language"
+                android:drawablePadding="5dp"/>
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <Spinner
+                android:id="@+id/spinner2"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textStyle="bold"
+                />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="149dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+        <com.google.android.material.button.MaterialButton
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Log out"
+            android:textColor="#5E5555"
+            android:textStyle="bold"
+            app:cornerRadius="10dp"
+            app:layout_constraintBottom_toTopOf="@+id/btnDeleteAccount"
+            app:strokeColor="@color/light_gray"
+            tools:layout_editor_absoluteX="10dp"
+            android:textAllCaps="false"
+            android:id="@+id/btnLogout"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnDeleteAccount"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Delete account"
+            android:textColor="#CA2222"
+            android:textStyle="bold"
+            app:cornerRadius="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:strokeColor="@color/light_gray"
+            tools:layout_editor_absoluteX="10dp"
+            android:textAllCaps="false"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</LinearLayout>

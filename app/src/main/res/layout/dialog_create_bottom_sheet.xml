@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_create_bottomsheet"
+    android:paddingHorizontal="20dp"
+    android:paddingBottom="30dp">
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_round_remove_24"
+        android:layout_gravity="center|top"
+        android:scaleType="centerCrop"/>
+    <LinearLayout
+        android:id="@+id/btn_create_studyset"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/button_for_create"
+        android:orientation="horizontal"
+        android:padding="15dp">
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:padding="2dp"
+            android:src="@drawable/ic_study_set"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:text="Study set"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/btn_create_folder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/button_for_create"
+        android:orientation="horizontal"
+        android:padding="15dp">
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/ic_folder"
+            android:padding="2dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:text="Folder"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/btn_create_class"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/button_for_create"
+        android:orientation="horizontal"
+        android:padding="15dp">
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/ic_class"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center_vertical"
+            android:text="Class"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

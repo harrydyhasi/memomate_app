@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+   >
+
+    <com.wajahatkarim3.easyflipview.EasyFlipView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:flipOnTouch="false"
+        app:flipEnabled="true"
+        app:flipDuration="400"
+        app:flipFrom="front"
+        app:flipType="vertical"
+        app:autoFlipBack="false"
+        android:id="@+id/flipCard">
+        <include layout="@layout/card_back"/>
+        <include layout="@layout/card_front"/>
+    </com.wajahatkarim3.easyflipview.EasyFlipView>
+
+    <FrameLayout
+        android:id="@+id/left_overlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/overlay_orange">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Still Learning"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:textColor="@color/orange"
+            android:textSize="30sp"
+            android:layout_marginBottom="30dp"/>
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/right_overlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/overlay_green">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Know"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:textColor="@color/green"
+            android:textSize="30sp"
+            android:layout_marginBottom="30dp"/>
+    </FrameLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnChoice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        android:padding="20dp"
+        android:gravity="left"
+        android:text="Play again"
+        android:textSize="14sp"
+        app:cornerRadius="10dp"
+        android:textColor="@color/black"
+        app:strokeWidth="1dp"
+        app:strokeColor="@color/blue"
+        android:layout_margin="4dp" />
+</LinearLayout>

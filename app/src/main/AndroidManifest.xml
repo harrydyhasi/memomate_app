@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/memomate"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Base.Theme.MemoMate"
+        tools:targetApi="31">
+        <activity
+            android:name=".Activities.CreateFolderInClassActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.EditStudySetActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.EmptyFolderActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.EditFolderActivity2"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.EditFolderActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.SearchActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.AddFolderActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.EditClassActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.LearnModeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.MatchModeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.AddSetActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.MemberLibraryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.SettingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.CreateSetActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.Setting_Password"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.Editable"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.VisibleTo"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.CreateClassActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.ChangePassWordActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.ClassDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.FinishedFlashcardsModeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.DashboardActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.CreateFolderActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.FolderActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.StackFlashCardActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.StudySetDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.SignUpActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.IntroActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Activities.SplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
